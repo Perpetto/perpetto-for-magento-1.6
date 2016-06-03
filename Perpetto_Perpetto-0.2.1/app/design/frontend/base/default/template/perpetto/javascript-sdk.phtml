@@ -1,0 +1,13 @@
+<?php
+/** @var $this Mage_Core_Model_Template */
+
+$helper = Mage::helper('perpetto');
+$accountId = $helper->getAccountId();
+?>
+<script type="text/javascript">
+    window.PERPETTO_ACCOUNT = '<?php echo $accountId ?>';
+    window.onPerpettoLoaded = function () {
+        Perpetto.update();
+    };
+</script>
+<script type="text/javascript" src="<?php echo Mage::helper('perpetto')->getEmbedJsUrl(); ?>"></script>

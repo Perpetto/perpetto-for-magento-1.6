@@ -1,0 +1,41 @@
+<?php
+/** @var $this Perpetto_Perpetto_Block_Adminhtml_System_Config_Form_Account */
+?>
+<div class="perpetto">
+    <?php echo $this->getHeaderHtml(); ?>
+    <?php if (!Mage::helper('perpetto')->isActive()): ?>
+        <div class="box-left">
+            <div class="entry-edit entry-edit-box">
+                <div class="entry-edit-head">
+                    <h4><?php echo $this->__('Get your Account ID and Secret'); ?></h4>
+                </div>
+                <div class="fieldset">
+                    <p><?php echo $this->__('Sign in here and go to the Store section to copy your Account ID and Secret.'); ?></p>
+                    <a class="button" href="<?php echo $this->getSignInUrl(); ?>"
+                       target="_blank"><?php echo $this->__('Sign In'); ?></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-right">
+            <div class="entry-edit entry-edit-box">
+                <div class="entry-edit-head">
+                    <h4><?php echo $this->__('Don\'t have a Perpetto account?'); ?></h4>
+                </div>
+                <div class="fieldset">
+                    <p><?php echo $this->__('Sign up free here to get started, it only takes a few seconds.'); ?></p>
+                    <a class="button" href="<?php echo $this->getSignUpUrl(); ?>"
+                       target="_blank"><?php echo $this->__('Sign Up Free Here'); ?></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+    <?php endif; ?>
+
+    <div class="entry-edit">
+        <?php echo $this->getFormHtml(); ?>
+    </div>
+    <?php echo $this->getChildHtml('form_after'); ?>
+</div>

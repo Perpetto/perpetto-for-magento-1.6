@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <perpetto translate="label" module="perpetto">
+            <label>Perpetto</label>
+            <sort_order>250</sort_order>
+        </perpetto>
+    </tabs>
+    <sections>
+        <perpetto translate="label" module="perpetto">
+            <label>Perpetto Account</label>
+            <tab>perpetto</tab>
+            <frontend_model>perpetto/adminhtml_system_config_form_account</frontend_model>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>Account ID and Secret</label>
+                    <frontend_type>text</frontend_type>
+                    <comment><![CDATA[Insert the Account ID and Secret of your Perpetto account to get started. You can find them in the Store section after you sign in.]]></comment>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <account_id translate="label comment">
+                            <label>Account ID</label>
+                            <sort_order>10</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <validate>required-entry</validate>
+                        </account_id>
+                        <secret translate="label comment">
+                            <label>Secret</label>
+                            <sort_order>20</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <validate>required-entry</validate>
+                        </secret>
+                    </fields>
+                </general>
+            </groups>
+        </perpetto>
+        <perpetto_recommendations translate="label" module="perpetto">
+            <label>Recommendations Settings</label>
+            <tab>perpetto</tab>
+            <frontend_model>perpetto/adminhtml_system_config_form_recommendations</frontend_model>
+            <frontend_type>text</frontend_type>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <dummy translate="label">
+                    <label>Dummy Section</label>
+                    <frontend_type>hidden</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <dummy translate="label comment">
+                            <label>Dummy data</label>
+                            <comment><![CDATA[used only to display the page!]]></comment>
+                            <sort_order>10</sort_order>
+                            <frontend_type>hidden</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <validate>required-entry</validate>
+                        </dummy>
+                    </fields>
+                </dummy>
+            </groups>
+        </perpetto_recommendations>
+    </sections>
+</config>

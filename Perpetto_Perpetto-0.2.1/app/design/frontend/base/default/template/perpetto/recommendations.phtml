@@ -1,0 +1,8 @@
+<?php
+/** @var $this Perpetto_Perpetto_Block_Recommendations */
+
+$slot = $this->getSlot();
+$token = $slot->getToken();
+$class = $this->getClass();
+?>
+<div class="<?php echo $class ?>" data-ptto-token="<?php echo $token ?>"></div>

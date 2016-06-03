@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<widgets>
+    <perpetto_reccomendations type="perpetto/recommendations" translate="name description" module="perpetto">
+        <name>Perpetto Recommendations</name>
+        <description>Allows to add Perpetto Recommendations block</description>
+        <parameters>
+            <slot_id>
+                <label>Perpetto Slot</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>perpetto/source_slots</source_model>
+            </slot_id>
+            <attr_class>
+                <label>Extra Classes</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+            </attr_class>
+        </parameters>
+    </perpetto_reccomendations>
+</widgets>

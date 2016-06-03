@@ -1,0 +1,25 @@
+<?php
+/** @var $this Perpetto_Perpetto_Block_Service_Cart */
+
+$quote = $this->getQuote();
+$taxHelper = Mage::helper('tax');
+$checkoutHelper = Mage::helper('checkout');
+?>
+<div class="ptto-cart" style="display: none;">
+    <div class="ptto-cart-id"><?php echo $quote->getId(); ?></div>
+    <div class="ptto-total"><?php echo $quote->getGrandTotal(); ?></div>
+    <div class="ptto-currency"><?php echo Mage::app()->getStore()->getCurrentCurrencyCode(); ?></div>
+    <?php foreach ($quote->getAllVisibleItems() as $item): /** @var $item Mage_Sales_Model_Quote_Item */ ?>
+        <?php
+        $rowTotal = $taxHelper->displayCartPriceExclTax()
+            ? $item->getRowTotal()
+            : $checkoutHelper->getSubtotalInclTax($_item);
+        ?>
+        <div class="ptto-item">
+            <div class="ptto-id"><?php echo $item->getProduct()->getId(); ?></div>
+            <div class="ptto-quantity"><?php echo $item->getQty(); ?></div>
+            <div class="ptto-price"><?php echo $item->getPrice(); ?></div>
+            <div class="ptto-itemTotal"><?php echo $rowTotal; ?></div>
+        </div>
+    <?php endforeach; ?>
+</div>

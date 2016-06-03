@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <perpetto translate="title" module="perpetto">
+                                        <title>Perpetto Account Settings</title>
+                                    </perpetto>
+                                    <perpetto_recommendations translate="title" module="perpetto">
+                                        <title>Perpetto Recommendations Settings</title>
+                                    </perpetto_recommendations>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

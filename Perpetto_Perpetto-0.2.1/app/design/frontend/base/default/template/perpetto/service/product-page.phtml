@@ -1,0 +1,30 @@
+<?php
+/** @var $this Perpetto_Perpetto_Block_Service_Product */
+
+$product = $this->getProduct();
+
+$price = $this->getProductPrice();
+$finalPrice = $product->getFinalPrice();
+?>
+<?php if ($product instanceof Mage_Catalog_Model_Product): ?>
+    <div class="ptto-item-details" style="display: none;">
+        <div class="ptto-id"><?php echo $product->getId(); ?></div>
+        <div class="ptto-name"><?php echo $product->getName(); ?></div>
+        <img class="ptto-image" src="<?php echo $this->getProductImageUrl(); ?>"/>
+        <div class="ptto-url"><?php echo $product->getUrlInStore(); ?></div>
+        <div class="ptto-listprice"><?php echo $price ?></div>
+        <div class="ptto-currency"><?php echo Mage::app()->getStore()->getCurrentCurrencyCode(); ?></div>
+        <div class="ptto-availability"><?php echo (int)$product->getIsSalable(); ?></div>
+
+        <div class="ptto-categories"><?php echo $this->getProductCategoriesPaths(); ?></div>
+        <div class="ptto-category"><?php echo $this->getCurrentCategoryPath(); ?></div>
+
+        <?php if ($price != $finalPrice): ?>
+            <div class="ptto-price"><?php echo $finalPrice ?></div>
+        <?php endif ?>
+
+        <div class="ptto-brand"><?php echo $product->getBrand(); ?></div>
+        <div class="ptto-tags"></div>
+        <div class="ptto-summary"><?php echo $product->getDescription(); ?></div>
+    </div>
+<?php endif; ?>

@@ -1,0 +1,206 @@
+.perpetto,
+.perpetto * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.perpetto {
+    color: #7a7a7a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.perpetto .align-center {
+    text-align: center;
+}
+
+.perpetto .align-left {
+    text-align: left;
+}
+
+.perpetto .align-right {
+    text-align: right;
+}
+
+.perpetto p {
+    margin-bottom: 20px;
+}
+
+.perpetto a.button {
+    background: #fff;
+    border: 1px solid #008db1;
+    border-radius: 20px;
+    color: #008db1;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 10px;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    width: 210px;
+}
+
+.perpetto a.button:hover {
+    background: #008db1;
+    color: #fff;
+}
+
+.perpetto .perpetto-header .perpetto-logo {
+    display: block;
+    float: left;
+    margin: 0 30px 20px 1px;
+    width: 120px;
+}
+
+.perpetto .perpetto-header .messages {
+    margin-left: 150px;
+}
+
+.perpetto .perpetto-header .messages > li {
+    background-position-y: 16px !important;
+    border: none;
+    padding-top: 16px !important;
+    padding-bottom: 10px!important;
+}
+
+.perpetto .perpetto-header .messages li {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.perpetto .perpetto-header .messages .error-msg,
+.perpetto .perpetto-header .messages .warning-msg,
+.perpetto .perpetto-header .messages .success-msg {
+    border: none !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+
+.perpetto .perpetto-header .messages .error-msg {
+    background-color: #F2DEDE !important;
+}
+
+.perpetto .perpetto-header .messages .error-msg li {
+    color: #000;
+}
+
+
+.perpetto .perpetto-header .messages .success-msg {
+    background-color: #CBE8BA !important;
+}
+
+.perpetto .perpetto-header .messages .warning-msg {
+    background-color: #FFD783 !important;
+}
+
+.perpetto .entry-edit {
+    background: none;
+    border-top: 1px solid #EBEBEB;
+    margin: 0 0 30px 0;
+    padding: 0;
+    position: relative;
+}
+
+.perpetto .entry-edit.entry-edit-box {
+    background: #EBEBEB;
+    border: none;
+    padding: 10px 10px 30px;
+    text-align: center;
+}
+
+.perpetto .entry-edit-head {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.perpetto .entry-edit .entry-edit-head > a,
+.perpetto .entry-edit .entry-edit-head > h4 {
+    background: none;
+    color: #000;
+    float: none;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.perpetto .entry-edit .entry-edit-head > a:after {
+    content: ' ▼';
+    font-size: 16px;
+}
+
+.perpetto .entry-edit .entry-edit-head > a.open:after {
+    content: ' ▲';
+}
+
+.perpetto .entry-edit fieldset,
+.perpetto .entry-edit .fieldset {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.perpetto .entry-edit .comment {
+    padding: 0;
+}
+
+.perpetto .entry-edit fieldset > .form-list {
+    margin-top: 20px;
+}
+
+.perpetto .entry-edit fieldset > .form-list td.label {
+    font-size: 14px;
+    padding-left: 0 !important;
+}
+
+.perpetto .entry-edit fieldset > .form-list td.value {
+    font-size: 14px;
+    padding-bottom: 15px !important;
+}
+
+.perpetto .entry-edit fieldset > .form-list td.scope-label {
+    font-size: 14px;
+    padding-top: 12px !important;
+}
+
+.perpetto .entry-edit fieldset > .form-list input.input-text {
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.perpetto table.perpetto-slots {
+    border: 1px solid #EBEBEB;
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+.perpetto table.perpetto-slots td,
+.perpetto table.perpetto-slots th {
+    padding: 10px 10px;
+}
+
+.perpetto table.perpetto-slots td {
+    border-top: 1px solid #EBEBEB;
+    color: #000;
+    font-size: 14px;
+}
+
+.perpetto table.perpetto-slots th {
+    font-weight: normal;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.perpetto table.perpetto-slots th:first-child {
+    color: #000;
+    font-size: 18px;
+    vertical-align: top;
+}
